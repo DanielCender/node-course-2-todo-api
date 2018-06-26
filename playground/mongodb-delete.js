@@ -17,6 +17,8 @@ MongoClient.connect(
 		// 		console.log(result);
 		// 	});
 
+		// Specify collection, then params, then handle result or error
+
 		db.collection("Users")
 			.findOneAndDelete({
 				_id: new ObjectID("5b3156a16419cbaf7aca7808"),
